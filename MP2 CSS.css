@@ -5,4 +5,46 @@ body{
 .container{
     width:780px;
     background-color: white; 
-     }
+     
+}
+#marge{
+    margin-left: 10px;
+    margin-right: 10px ;
+}
+#sousTitre{
+    margin-left: 30px;
+
+}
+
+
+h1{
+    text-align: center; 
+    font-size:xx-large;
+ }
+
+ h2{
+    counter-increment: chapter;
+    counter-reset: subpart;
+    font-size:x-large ;
+}
+
+h3{
+counter-increment: subpart; 
+font-size: larger;
+}
+
+h2:before {
+content: counter(chapter) ". ";
+ }
+ 
+h3:before {
+content: counter(chapter) "." counter(subpart) ". ";
+ }
+
+ h4{
+font-weight: bold;
+
+ }
+ top{
+     margin: 0px;
+ }
